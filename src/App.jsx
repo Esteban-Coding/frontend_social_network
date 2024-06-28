@@ -2,9 +2,12 @@
 function App() {
 
   return (
-    <>
-      <h1>Proyecto RED SOCIAL</h1>
-    </>
+    <div className='layout'>
+
+      {/* Cargamos toda la configuración de rutas */}
+      <Routing />
+
+    </div>
   )
 }
 

@@ -1,5 +1,13 @@
 export const PrivateLayout = () => {
-    return (
-      <div>PrivateLayout</div>
-    )
-  }
+  return (
+    <>
+      {/* LAYOUT */}
+      <HeaderPriv />
+
+      {/* Contenido Principal */}
+      <section className="layout__content">
+        <Outlet />
+      </section>
+    </>
+  );
+};
