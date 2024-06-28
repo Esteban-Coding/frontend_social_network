@@ -17,7 +17,7 @@ export const Register = () => {
     // Prevenir que se actualice la pantalla
     e.preventDefault();
 
-    // Obetner los datos del formulario
+    // Obtener los datos del formulario
     let newUser = form;
 
     // Guardar usuario en la BD del API Backend
