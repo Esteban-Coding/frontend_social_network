@@ -1,3 +1,5 @@
+import { NavPriv } from "./NavPriv";
+
 export const HeaderPriv = () => {
   return (
     <header className="layout__navbar">
