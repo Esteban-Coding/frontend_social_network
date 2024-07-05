@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { PublicLayout } from "../../src/components/layout/public/PublicLayout";
-import { PrivateLayout } from "../../src/components/layout/private/PrivateLayout";
+import { PublicLayout } from "../components/layout/public/PublicLayout";
+import { PrivateLayout } from "../components/layout/private/PrivateLayout";
 import { Login } from "../components/user/Login";
 import { Register } from "../components/user/Register";
 import { Feed } from "../components/publication/Feed";
@@ -9,6 +9,8 @@ import { AuthProvider } from "../context/AuthProvider";
 import { Logout } from "../components/user/Logout";
 import { People } from "../components/user/People";
 import { Config } from "../components/user/Config";
+import { Following } from "../components/follow/Following";
+import { Followers } from "../components/follow/Followers";
 
 export const Routing = () => {
   return (
@@ -29,6 +31,8 @@ export const Routing = () => {
             <Route path="gente" element={<People />} />
             <Route path="ajustes" element={<Config />} />
             <Route path="logout" element={<Logout />} />
+            <Route path="siguiendo/:userId" element={<Following />} />
+            <Route path="seguidores/:userId" element={<Followers />} />
           </Route>
 
           {/* Configuramos la ruta para el error 404 */}
