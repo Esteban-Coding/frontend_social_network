@@ -7,6 +7,7 @@ import { Feed } from "../components/publication/Feed";
 import { Error404 } from "../components/layout/Error404";
 import { AuthProvider } from "../context/AuthProvider";
 import { Logout } from "../components/user/Logout";
+import { People } from "../components/user/People";
 
 export const Routing = () => {
   return (
@@ -24,8 +25,9 @@ export const Routing = () => {
           <Route path="/rsocial" element={<PrivateLayout />}>
             <Route index element={<Feed />} />
             <Route path="feed" element={<Feed />} />
+            <Route path="gente" element={<People />} />
+            <Route path="logout" element={<Logout />} />
           </Route>
-          <Route path="logout" element={<Logout />} />
 
           {/* Configuramos la ruta para el error 404 */}
           <Route path="*" element={<Error404 />} />
