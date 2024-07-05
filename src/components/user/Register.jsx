@@ -20,7 +20,7 @@ export const Register = () => {
     // Obtener los datos del formulario
     let newUser = form;
 
-    // Guardar usuario en la BD del API Backend
+    // Petición a la API del Backend para guardar usuario en la BD
     const request = await fetch(Global.url + "user/register", {
       method: "POST",
       body: JSON.stringify(newUser),
